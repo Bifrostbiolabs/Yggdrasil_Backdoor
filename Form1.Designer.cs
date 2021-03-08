@@ -130,7 +130,6 @@ namespace Yggdrasil_Backdoor
             chartArea1.AxisY.LineColor = System.Drawing.Color.Transparent;
             chartArea1.AxisY2.LineColor = System.Drawing.Color.White;
             chartArea1.BackColor = System.Drawing.Color.White;
-            chartArea1.BackImage = "C:\\Users\\Jesper Møller\\Desktop\\1-4kvpng.png";
             chartArea1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
             chartArea1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
             chartArea1.BorderColor = System.Drawing.Color.WhiteSmoke;
@@ -138,14 +137,13 @@ namespace Yggdrasil_Backdoor
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(1335, 54);
+            this.chart1.Location = new System.Drawing.Point(753, 54);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
             series1.CustomProperties = "RadarDrawingStyle=Line";
             series1.Legend = "Legend1";
             series1.Name = "ADC Peak";
-            series1.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
             series2.BorderWidth = 5;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
@@ -175,7 +173,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(1776, 433);
+            this.button13.Location = new System.Drawing.Point(1194, 433);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 34;
@@ -220,7 +218,7 @@ namespace Yggdrasil_Backdoor
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1331, 27);
+            this.label6.Location = new System.Drawing.Point(749, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 24);
             this.label6.TabIndex = 38;
@@ -253,7 +251,7 @@ namespace Yggdrasil_Backdoor
             // comboBoxSensornr
             // 
             this.comboBoxSensornr.FormattingEnabled = true;
-            this.comboBoxSensornr.Location = new System.Drawing.Point(1776, 326);
+            this.comboBoxSensornr.Location = new System.Drawing.Point(1194, 326);
             this.comboBoxSensornr.Name = "comboBoxSensornr";
             this.comboBoxSensornr.Size = new System.Drawing.Size(75, 21);
             this.comboBoxSensornr.TabIndex = 41;
@@ -264,7 +262,7 @@ namespace Yggdrasil_Backdoor
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(764, 54);
+            this.chart2.Location = new System.Drawing.Point(194, 547);
             this.chart2.Name = "chart2";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -281,7 +279,7 @@ namespace Yggdrasil_Backdoor
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(760, 29);
+            this.label8.Location = new System.Drawing.Point(190, 520);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 24);
             this.label8.TabIndex = 44;
@@ -292,7 +290,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1200, 419);
+            this.label9.Location = new System.Drawing.Point(622, 896);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 13);
             this.label9.TabIndex = 47;
@@ -301,14 +299,14 @@ namespace Yggdrasil_Backdoor
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(1203, 435);
+            this.comboBox4.Location = new System.Drawing.Point(625, 912);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(75, 21);
             this.comboBox4.TabIndex = 46;
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1203, 462);
+            this.button14.Location = new System.Drawing.Point(625, 939);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 45;
@@ -319,7 +317,7 @@ namespace Yggdrasil_Backdoor
             // comboBoxAverage
             // 
             this.comboBoxAverage.FormattingEnabled = true;
-            this.comboBoxAverage.Location = new System.Drawing.Point(1776, 366);
+            this.comboBoxAverage.Location = new System.Drawing.Point(1194, 366);
             this.comboBoxAverage.Name = "comboBoxAverage";
             this.comboBoxAverage.Size = new System.Drawing.Size(75, 21);
             this.comboBoxAverage.TabIndex = 53;
@@ -328,7 +326,7 @@ namespace Yggdrasil_Backdoor
             // comboBoxTime
             // 
             this.comboBoxTime.FormattingEnabled = true;
-            this.comboBoxTime.Location = new System.Drawing.Point(1776, 286);
+            this.comboBoxTime.Location = new System.Drawing.Point(1194, 286);
             this.comboBoxTime.Name = "comboBoxTime";
             this.comboBoxTime.Size = new System.Drawing.Size(75, 21);
             this.comboBoxTime.TabIndex = 52;
@@ -337,14 +335,14 @@ namespace Yggdrasil_Backdoor
             // comboBoxPeak
             // 
             this.comboBoxPeak.FormattingEnabled = true;
-            this.comboBoxPeak.Location = new System.Drawing.Point(1776, 406);
+            this.comboBoxPeak.Location = new System.Drawing.Point(1194, 406);
             this.comboBoxPeak.Name = "comboBoxPeak";
             this.comboBoxPeak.Size = new System.Drawing.Size(75, 21);
             this.comboBoxPeak.TabIndex = 54;
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(1776, 462);
+            this.button15.Location = new System.Drawing.Point(1194, 462);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 55;
@@ -356,7 +354,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1773, 270);
+            this.label2.Location = new System.Drawing.Point(1191, 270);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 56;
@@ -366,7 +364,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1773, 310);
+            this.label3.Location = new System.Drawing.Point(1191, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 57;
@@ -376,7 +374,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1773, 350);
+            this.label4.Location = new System.Drawing.Point(1191, 350);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 58;
@@ -386,7 +384,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(1773, 390);
+            this.label10.Location = new System.Drawing.Point(1191, 390);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(32, 13);
             this.label10.TabIndex = 59;
@@ -403,7 +401,7 @@ namespace Yggdrasil_Backdoor
             this.chart3.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(1335, 512);
+            this.chart3.Location = new System.Drawing.Point(753, 512);
             this.chart3.Name = "chart3";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -427,7 +425,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(1773, 574);
+            this.label11.Location = new System.Drawing.Point(1191, 574);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(22, 13);
             this.label11.TabIndex = 62;
@@ -437,7 +435,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(1773, 624);
+            this.label12.Location = new System.Drawing.Point(1191, 624);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(18, 13);
             this.label12.TabIndex = 64;
@@ -446,7 +444,7 @@ namespace Yggdrasil_Backdoor
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1776, 590);
+            this.comboBox2.Location = new System.Drawing.Point(1194, 590);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(75, 21);
             this.comboBox2.TabIndex = 66;
@@ -455,7 +453,7 @@ namespace Yggdrasil_Backdoor
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(1776, 640);
+            this.comboBox3.Location = new System.Drawing.Point(1194, 640);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(75, 21);
             this.comboBox3.TabIndex = 67;
