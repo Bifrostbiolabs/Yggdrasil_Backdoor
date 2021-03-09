@@ -173,9 +173,29 @@ namespace Yggdrasil_Backdoor
         {
             if (serialPort1.IsOpen)
             {
-                String nr = comboBoxSensornr.SelectedItem.ToString();
+                
+                String nr = comboBox4.SelectedItem.ToString();
                 serialPort1.WriteLine("#,25," + nr.ToString() + ",1,0,");
                 richTextBox1.Text = ("#,25," + nr.ToString() + ",1,0,");
+
+                while (serialPort1.BytesToRead == 0) ;
+                String str = Convert.ToString(serialPort1.ReadLine());
+                richTextBox2.Text = str;
+                String[] spearator = { ",",";" };
+
+                Int32 count = 20;
+
+
+                string[] strlista = str.Split(spearator, count, StringSplitOptions.RemoveEmptyEntries);
+                chart2.Series["Calibration data"].Points.Clear();
+
+                chart2.Series["Calibration data"].Points.AddXY(100, strlista[6]);
+                chart2.Series["Calibration data"].Points.AddXY(85, strlista[7]);
+                chart2.Series["Calibration data"].Points.AddXY(70, strlista[8]);
+                chart2.Series["Calibration data"].Points.AddXY(55, strlista[9]);
+                chart2.Series["Calibration data"].Points.AddXY(40, strlista[10]);
+                chart2.Series["Calibration data"].Points.AddXY(0, strlista[11]);
+                textBox1.Text = strlista[4];
             }
         }
 
