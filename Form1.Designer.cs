@@ -806,7 +806,7 @@ namespace Yggdrasil_Backdoor
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
-            this.ClientSize = new System.Drawing.Size(1844, 1080);
+            this.ClientSize = new System.Drawing.Size(1878, 1080);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button10);
