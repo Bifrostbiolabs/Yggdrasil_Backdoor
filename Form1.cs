@@ -94,17 +94,22 @@ namespace Yggdrasil_Backdoor
 
                 serialPort1.WriteLine("#,60," + nr.ToString() + ",1,0,") ;
                 richTextBox1.Text = ("#,60," + nr.ToString() + ",1,0,");
+
+                while ((serialPort1.BytesToRead == 0)) ;
                 
-                while (serialPort1.BytesToRead == 0);
+
+
+
+
                 String str = Convert.ToString(serialPort1.ReadLine());
                 richTextBox2.Text = str;
-                String[] spearator = { ","};
+                String[] spearatora = { ","};
                 String[] spearatorb = { ";"};
 
                 Int32 count = 400;
 
                 
-                string[] strlist = str.Split(spearator, count, StringSplitOptions.RemoveEmptyEntries);
+                string[] strlist = str.Split(spearatora, count, StringSplitOptions.RemoveEmptyEntries);
                 
 
 

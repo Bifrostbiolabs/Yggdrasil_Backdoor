@@ -76,8 +76,6 @@ namespace Yggdrasil_Backdoor
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
@@ -203,7 +201,7 @@ namespace Yggdrasil_Backdoor
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(533, 196);
             this.richTextBox2.TabIndex = 35;
-            this.richTextBox2.Text = "gad vide om det virker";
+            this.richTextBox2.Text = "";
             // 
             // label5
             // 
@@ -398,7 +396,6 @@ namespace Yggdrasil_Backdoor
             // timer2
             // 
             this.timer2.Enabled = true;
-            this.timer2.Interval = 1000;
             // 
             // chart3
             // 
@@ -471,26 +468,6 @@ namespace Yggdrasil_Backdoor
             this.textBox1.Size = new System.Drawing.Size(75, 20);
             this.textBox1.TabIndex = 68;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(941, 514);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(22, 13);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "Fra";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(949, 522);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(22, 13);
-            this.label14.TabIndex = 70;
-            this.label14.Text = "Fra";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -508,8 +485,6 @@ namespace Yggdrasil_Backdoor
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
@@ -590,8 +565,6 @@ namespace Yggdrasil_Backdoor
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
     }
 }
