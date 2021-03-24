@@ -81,75 +81,47 @@ namespace Yggdrasil_Backdoor
             if (serialPort1.IsOpen)
             {
                 String nr = comboBoxSensor.SelectedItem.ToString();
+                String[] sepearator_a = { "," };
+                String[] sepearator_b = { ";" };
+                Int32 count = 100;
+                String Fuld_string;
+                String[] stringpart_a;
+                String[] stringpart_b;
+                chart1.Series["ADC Peak"].Points.Clear();
+                int circel_count = 60;
+                int xy_count = 0;
 
 
-                serialPort1.WriteLine("#,60," + nr.ToString() + ",1,0,") ;
-                richTextBoxTx.Text = ("#,60," + nr.ToString() + ",1,0,");
-                
-                while (serialPort1.BytesToRead == 0);
-                String str = Convert.ToString(serialPort1.ReadLine());
-                richTextBoxRx.Text = str;
-                String[] spearator = { ","};
-                String[] spearatorb = { ";"};
-
-                Int32 count = 400;
-
-                
-                string[] strlist = str.Split(spearator, count, StringSplitOptions.RemoveEmptyEntries);
-                
-
-
-                if (strlist.Length > 3)
+                for (int j = 0; j<8;j++)
                 {
-                    try
+                    serialPort1.WriteLine("#," + circel_count.ToString() + "," + nr.ToString() + ",1,0,"); richTextBoxTx.Text = ("#," + circel_count.ToString() + "," + nr.ToString() + ",1,0,");
+                    while (serialPort1.BytesToRead == 0) ;
+                    Fuld_string = Convert.ToString(serialPort1.ReadLine()); richTextBoxRx.Text = Fuld_string;
+                    stringpart_a = Fuld_string.Split(sepearator_a, count, StringSplitOptions.RemoveEmptyEntries);
+                    if (stringpart_a.Length > 4)
                     {
-                        string[] mysplitdata = strlist[4].Split(spearatorb, count, StringSplitOptions.RemoveEmptyEntries);
-                        richTextBoxRx.Text = strlist[4];
-                        if (first == true & mysplitdata.Length > 90)
+                        stringpart_b = stringpart_a[4].Split(sepearator_b, count, StringSplitOptions.RemoveEmptyEntries);
+                        for (int i = 0; i < 10; i++)
                         {
-                            averragedata = mysplitdata;
-                            first = false;
-
+                            chart1.Series["ADC Peak"].Points.AddXY(xy_count, stringpart_b[i]);
+                            xy_count++;
                         }
 
-                        chart1.Series["ADC Value"].Points.Clear();
-                        chart1.Series["ADC Peak"].Points.Clear();
-                        chart3.Series["Average"].Points.Clear();
-                        chart3.Series["Peak"].Points.Clear();
-                        //chart1.Series["top"].Points.AddXY(0,100);
-
-                        for (int i = 0; i < 360; i++)
-                        {
-                            float a = float.Parse(mysplitdata[i]);
-                            float b = float.Parse(averragedata[i]);
-
-                            float s = (a * H) + (b * L);
-
-                            averragedata[i] = s.ToString();
-                            int o = (int)Math.Round(s, 2);
-                            averragedata[i] = s.ToString();
-
-                            chart1.Series["ADC Value"].Points.AddXY(i, o);
-                            if (comboBoxPeak.Text == "Yes")
-                            {
-                                chart1.Series["ADC Peak"].Points.AddXY(i, mysplitdata[i]);
-                            }
-                            
-                            
-
-                            
-
-
-                        }
                     }
-                    catch
-                    {
-
-                    }
-
-                    
-
                 }
+
+                
+                
+
+
+
+
+
+
+
+
+
+
             }
         }
         private void button14_Click(object sender, EventArgs e)
