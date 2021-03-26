@@ -83,6 +83,16 @@ namespace Yggdrasil_Backdoor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gynge {
+            get {
+                object obj = ResourceManager.GetObject("gynge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap raderpng {
             get {
                 object obj = ResourceManager.GetObject("raderpng", resourceCulture);

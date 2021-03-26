@@ -18,11 +18,17 @@ namespace Yggdrasil_Backdoor
         public bool first = true;
         float[] cal;
         int adcCount;
+        string Fuld_string;
+        string[] stringpart_a = new string[100];
 
 
 
-        public float H = 0.10f;
-        public float L = 0.90f;
+
+        float[] stringpart_c = new float[100];
+
+
+        public float H = 0.50F;
+        public float L = 0.50F;
 
 
         public Form1()
@@ -59,11 +65,11 @@ namespace Yggdrasil_Backdoor
             comboBoxPeak.DataSource = number_Peak; comboBoxPeak.Text = "Yes";
 
             //tildeler combobox Periode intervaler
-            string[] number0_7 = { "0", "1", "2", "3", "4", "5", "6", "7" };
-            comboBoxPeriod.DataSource = number0_7; comboBoxPeriod.Text = "0";
+            string[] number1_8 = { "1", "2", "3", "4", "5", "6", "7", "8" };
+            comboBoxPeriod.DataSource = number1_8; comboBoxPeriod.Text = "1";
 
-           
             
+
 
         }
 
@@ -84,10 +90,16 @@ namespace Yggdrasil_Backdoor
                 String[] sepearator_a = { "," };
                 String[] sepearator_b = { ";" };
                 Int32 count = 100;
-                String Fuld_string;
-                String[] stringpart_a;
-                String[] stringpart_b;
+                
+
+               
+
+
                 chart1.Series["ADC Peak"].Points.Clear();
+                chart1.Series["ADC Value"].Points.Clear();
+                chart3.Series["Peak"].Points.Clear();
+                chart3.Series["Average"].Points.Clear();
+                richTextBoxRx.Text = "";
                 int circel_count = 60;
                 int xy_count = 0;
 
@@ -96,18 +108,95 @@ namespace Yggdrasil_Backdoor
                 {
                     serialPort1.WriteLine("#," + circel_count.ToString() + "," + nr.ToString() + ",1,0,"); richTextBoxTx.Text = ("#," + circel_count.ToString() + "," + nr.ToString() + ",1,0,");
                     while (serialPort1.BytesToRead == 0) ;
-                    Fuld_string = Convert.ToString(serialPort1.ReadLine()); richTextBoxRx.Text = Fuld_string;
+                    Thread.Sleep(10);
+                    Fuld_string = Convert.ToString(serialPort1.ReadLine()); richTextBoxRx.AppendText(Fuld_string);
                     stringpart_a = Fuld_string.Split(sepearator_a, count, StringSplitOptions.RemoveEmptyEntries);
-                    if (stringpart_a.Length > 4)
-                    {
-                        stringpart_b = stringpart_a[4].Split(sepearator_b, count, StringSplitOptions.RemoveEmptyEntries);
+
+                    string[] stringpart_b = new string[20];
+                    stringpart_b =  stringpart_a[4].Split(sepearator_b, count, StringSplitOptions.RemoveEmptyEntries);
+                   
                         for (int i = 0; i < 10; i++)
                         {
-                            chart1.Series["ADC Peak"].Points.AddXY(xy_count, stringpart_b[i]);
+
+                            try
+                            {
+                            
+                               
+                            
+                            
+                                chart1.Series["ADC Value"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                            if (comboBoxPeak.SelectedItem == "Yes") { chart1.Series["ADC Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+
+
+
+                                
+
+
+                            float adc_calc = float.Parse(stringpart_b[i]);
+                                float temp_calc = stringpart_c[xy_count];
+                                float result = ((adc_calc * 0.10F) + (temp_calc * 0.90F));
+                                stringpart_c[xy_count] = result;
+                            //richTextBox1.AppendText( result.ToString());
+
+                            if ((comboBoxPeriod.SelectedItem == "1") & ( j == 0))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "2") & (j == 1))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "3") & (j == 2))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "4") & (j == 3))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "5") & (j == 4))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "6") & (j == 5))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "7") & (j == 6))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+                            if ((comboBoxPeriod.SelectedItem == "8") & (j == 7))
+                            {
+                                chart3.Series["Average"].Points.AddXY(xy_count, stringpart_c[xy_count]);
+                                if (comboBoxPeak.SelectedItem == "Yes") { chart3.Series["Peak"].Points.AddXY(xy_count, stringpart_b[i]); }
+                            }
+
+
+
+                        }
+                            catch
+                            {
+
+                            }
+
+
+
+
                             xy_count++;
                         }
+                    
+                        
 
-                    }
+                    
+                    circel_count++;
                 }
 
                 
@@ -147,53 +236,57 @@ namespace Yggdrasil_Backdoor
 
                     float div = Convert.ToInt32( strlista[4]);
                     int divb;
-                     div = Convert.ToInt32(strlista[4]) / 100 * 85;
+
+                    div = Convert.ToInt32(strlista[4]) / 100 * 85;
                     divb = Convert.ToInt32( div);
+                    chart2.Series["Calibration data"].Points.AddXY(strlista[4], strlista[6]); textBox100.Text = strlista[6]; chart2.Series["Calibration datab"].Points.AddXY(strlista[4], strlista[6]);
 
-
-                    chart2.Series["Calibration data"].Points.AddXY(strlista[4], strlista[6]); textBox100.Text = strlista[6];
                     div = Convert.ToInt32(strlista[4]) / 100 * 85;
                     divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[7]); textBox85.Text = strlista[7];
+                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[7]); textBox85.Text = strlista[7]; chart2.Series["Calibration datab"].Points.AddXY(divb, strlista[7]);
+
                     div = Convert.ToInt32(strlista[4]) / 100 * 70;
                     divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[8]); textBox70.Text = strlista[8];
+                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[8]); textBox70.Text = strlista[8]; chart2.Series["Calibration datab"].Points.AddXY(divb, strlista[8]);
+
                     div = Convert.ToInt32(strlista[4]) / 100 * 55;
                     divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[9]); textBox55.Text = strlista[9];
+                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[9]); textBox55.Text = strlista[9]; chart2.Series["Calibration datab"].Points.AddXY(divb, strlista[9]);
+
                     div = Convert.ToInt32(strlista[4]) / 100 * 40;
                     divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[10]); textBox40.Text = strlista[10];
-                  //  chart2.Series["Calibration data"].Points.AddXY(0, strlista[11]); textBox0.Text = strlista[11];
+                    chart2.Series["Calibration data"].Points.AddXY(divb, strlista[10]); textBox40.Text = strlista[10]; chart2.Series["Calibration datab"].Points.AddXY(divb, strlista[10]);
+
+                    //  chart2.Series["Calibration data"].Points.AddXY(0, strlista[11]); textBox0.Text = strlista[11];// no need to show 0 point
                     richTextBoxRx.Text = strlista[4];
-                    textBox1.Text = strlista[4];
+                    textBox1.Text = strlista[4]; textBox7.Text = strlista[4];
 
 
 
 
-                    
 
-                  
+
+
                     div = Convert.ToInt32(strlista[4]) / 100 * 85;
                     divb = Convert.ToInt32(div);
 
 
-                    chart2.Series["Calibration datab"].Points.AddXY(strlista[4], strlista[6]); 
-                    div = Convert.ToInt32(strlista[4]) / 100 * 85;
-                    divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration datab"].Points.AddXY(div, strlista[7]); 
-                    div = Convert.ToInt32(strlista[4]) / 100 * 70;
-                    divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration datab"].Points.AddXY(div, strlista[8]); 
-                    div = Convert.ToInt32(strlista[4]) / 100 * 55;
-                    divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration datab"].Points.AddXY(div, strlista[9]); 
-                    div = Convert.ToInt32(strlista[4]) / 100 * 40;
-                    divb = Convert.ToInt32(div);
-                    chart2.Series["Calibration datab"].Points.AddXY(div, strlista[10]); 
+                    //chart2.Series["Calibration datab"].Points.AddXY(strlista[4], strlista[6]); 
+                    //div = Convert.ToInt32(strlista[4]) / 100 * 85;
+                    //divb = Convert.ToInt32(div);
+                    //chart2.Series["Calibration datab"].Points.AddXY(div, strlista[7]); 
+                    //div = Convert.ToInt32(strlista[4]) / 100 * 70;
+                    //divb = Convert.ToInt32(div);
+                    //chart2.Series["Calibration datab"].Points.AddXY(div, strlista[8]); 
+                    //div = Convert.ToInt32(strlista[4]) / 100 * 55;
+                    //divb = Convert.ToInt32(div);
+                    //chart2.Series["Calibration datab"].Points.AddXY(div, strlista[9]); 
+                    //div = Convert.ToInt32(strlista[4]) / 100 * 40;
+                    //divb = Convert.ToInt32(div);
+                    //chart2.Series["Calibration datab"].Points.AddXY(div, strlista[10]); 
                     //  chart2.Series["Calibration data"].Points.AddXY(0, strlista[11]); textBox0.Text = strlista[11];
-                    richTextBoxRx.Text = strlista[4];
-                    textBox1.Text = strlista[4];
+                    //richTextBoxRx.Text = strlista[4];
+                   // textBox1.Text = strlista[4];
 
 
 
@@ -219,8 +312,10 @@ namespace Yggdrasil_Backdoor
                 serialPort1.Open();
                 if (serialPort1.IsOpen)
                 {
+                    
                     button1.BackColor = Color.Red;
                     button1.Text = "Connectet";
+                    serialPort1.ReadExisting();
                     serialPort1.WriteLine("#,55,0,1,0,");
                     while (serialPort1.BytesToRead == 0) ;
                     serialPort1.ReadLine();
@@ -285,23 +380,23 @@ namespace Yggdrasil_Backdoor
         {
             if (comboBoxAverage.Text == "None")
             {
-                H = 0.00f;
-                L = 0.00f;
+                H = 0.00F;
+                L = 0.00F;
             }
             if (comboBoxAverage.Text == "High")  
             {
-                H = 0.01f;
-                L = 0.99f;
+                H = 0.01F;
+                L = 0.99F;
             }
             if (comboBoxAverage.Text == "Medium")
             {
-                H = 0.10f;
-                L = 0.90f;
+                H = 0.10F;
+                L = 0.90F;
             }
             if (comboBoxAverage.Text == "Low")
             {
-                H = 0.50f;
-                L = 0.50f;
+                H = 0.50F;
+                L = 0.50F;
             }
         }
 
