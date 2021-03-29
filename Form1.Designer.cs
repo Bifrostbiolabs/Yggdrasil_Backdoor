@@ -30,21 +30,21 @@ namespace Yggdrasil_Backdoor
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series31 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series32 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series33 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series34 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series35 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.comboBox_Port = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -163,51 +163,51 @@ namespace Yggdrasil_Backdoor
             // 
             // chart1
             // 
-            chartArea17.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea17.Area3DStyle.IsRightAngleAxes = false;
-            chartArea17.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
-            chartArea17.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisX2.LineColor = System.Drawing.Color.White;
-            chartArea17.AxisY.LineColor = System.Drawing.Color.Transparent;
-            chartArea17.AxisY2.LineColor = System.Drawing.Color.White;
-            chartArea17.BackColor = System.Drawing.Color.White;
-            chartArea17.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            chartArea17.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
-            chartArea17.BorderColor = System.Drawing.Color.WhiteSmoke;
-            chartArea17.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea17);
-            legend17.Name = "Legend1";
-            this.chart1.Legends.Add(legend17);
+            chartArea9.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea9.Area3DStyle.IsRightAngleAxes = false;
+            chartArea9.Area3DStyle.LightStyle = System.Windows.Forms.DataVisualization.Charting.LightStyle.Realistic;
+            chartArea9.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea9.AxisX2.LineColor = System.Drawing.Color.White;
+            chartArea9.AxisY.LineColor = System.Drawing.Color.Transparent;
+            chartArea9.AxisY2.LineColor = System.Drawing.Color.White;
+            chartArea9.BackColor = System.Drawing.Color.White;
+            chartArea9.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            chartArea9.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled;
+            chartArea9.BorderColor = System.Drawing.Color.WhiteSmoke;
+            chartArea9.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chart1.Legends.Add(legend9);
             this.chart1.Location = new System.Drawing.Point(753, 54);
             this.chart1.Name = "chart1";
-            series29.ChartArea = "ChartArea1";
-            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
-            series29.CustomProperties = "RadarDrawingStyle=Line";
-            series29.Legend = "Legend1";
-            series29.Name = "ADC Peak";
-            series30.BorderWidth = 5;
-            series30.ChartArea = "ChartArea1";
-            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
-            series30.Color = System.Drawing.Color.DarkOrange;
-            series30.CustomProperties = "RadarDrawingStyle=Line, EmptyPointValue=Zero";
-            series30.EmptyPointStyle.Color = System.Drawing.Color.Lime;
-            series30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series30.IsXValueIndexed = true;
-            series30.LabelAngle = 20;
-            series30.LabelBackColor = System.Drawing.Color.White;
-            series30.LabelBorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            series30.LabelForeColor = System.Drawing.Color.Chocolate;
-            series30.Legend = "Legend1";
-            series30.MarkerBorderColor = System.Drawing.Color.Black;
-            series30.MarkerBorderWidth = 5;
-            series30.MarkerColor = System.Drawing.Color.Blue;
-            series30.MarkerSize = 120;
-            series30.MarkerStep = 10;
-            series30.Name = "ADC Value";
-            series30.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series30.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.chart1.Series.Add(series29);
-            this.chart1.Series.Add(series30);
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series15.CustomProperties = "RadarDrawingStyle=Line";
+            series15.Legend = "Legend1";
+            series15.Name = "ADC Peak";
+            series16.BorderWidth = 5;
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series16.Color = System.Drawing.Color.DarkOrange;
+            series16.CustomProperties = "RadarDrawingStyle=Line, EmptyPointValue=Zero";
+            series16.EmptyPointStyle.Color = System.Drawing.Color.Lime;
+            series16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series16.IsXValueIndexed = true;
+            series16.LabelAngle = 20;
+            series16.LabelBackColor = System.Drawing.Color.White;
+            series16.LabelBorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            series16.LabelForeColor = System.Drawing.Color.Chocolate;
+            series16.Legend = "Legend1";
+            series16.MarkerBorderColor = System.Drawing.Color.Black;
+            series16.MarkerBorderWidth = 5;
+            series16.MarkerColor = System.Drawing.Color.Blue;
+            series16.MarkerSize = 120;
+            series16.MarkerStep = 10;
+            series16.Name = "ADC Value";
+            series16.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series16.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.chart1.Series.Add(series15);
+            this.chart1.Series.Add(series16);
             this.chart1.Size = new System.Drawing.Size(533, 452);
             this.chart1.TabIndex = 32;
             this.chart1.Text = "chart1";
@@ -291,24 +291,24 @@ namespace Yggdrasil_Backdoor
             // 
             // chart2
             // 
-            chartArea18.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea18);
-            legend18.Name = "Legend1";
-            this.chart2.Legends.Add(legend18);
+            chartArea10.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chart2.Legends.Add(legend10);
             this.chart2.Location = new System.Drawing.Point(1313, 54);
             this.chart2.Name = "chart2";
-            series31.ChartArea = "ChartArea1";
-            series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series31.IsXValueIndexed = true;
-            series31.Legend = "Legend1";
-            series31.Name = "Calibration data";
-            series32.ChartArea = "ChartArea1";
-            series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
-            series32.IsXValueIndexed = true;
-            series32.Legend = "Legend1";
-            series32.Name = "Calibration datab";
-            this.chart2.Series.Add(series31);
-            this.chart2.Series.Add(series32);
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.IsXValueIndexed = true;
+            series17.Legend = "Legend1";
+            series17.Name = "Calibration data";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
+            series18.IsXValueIndexed = true;
+            series18.Legend = "Legend1";
+            series18.Name = "Calibration datab";
+            this.chart2.Series.Add(series17);
+            this.chart2.Series.Add(series18);
             this.chart2.Size = new System.Drawing.Size(533, 452);
             this.chart2.TabIndex = 43;
             this.chart2.Text = "chart2";
@@ -353,26 +353,26 @@ namespace Yggdrasil_Backdoor
             // 
             // chart3
             // 
-            chartArea19.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea19);
-            legend19.Name = "Legend1";
-            this.chart3.Legends.Add(legend19);
+            chartArea11.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chart3.Legends.Add(legend11);
             this.chart3.Location = new System.Drawing.Point(753, 547);
             this.chart3.Name = "chart3";
-            series33.ChartArea = "ChartArea1";
-            series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series33.Legend = "Legend1";
-            series33.Name = "Peak";
-            series34.BorderWidth = 5;
-            series34.ChartArea = "ChartArea1";
-            series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series34.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series34.CustomProperties = "EmptyPointValue=Zero";
-            series34.Legend = "Legend1";
-            series34.Name = "Average";
-            series34.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-            this.chart3.Series.Add(series33);
-            this.chart3.Series.Add(series34);
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series19.Legend = "Legend1";
+            series19.Name = "Peak";
+            series20.BorderWidth = 5;
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series20.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series20.CustomProperties = "EmptyPointValue=Zero";
+            series20.Legend = "Legend1";
+            series20.Name = "Average";
+            series20.XAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+            this.chart3.Series.Add(series19);
+            this.chart3.Series.Add(series20);
             this.chart3.Size = new System.Drawing.Size(533, 196);
             this.chart3.TabIndex = 60;
             this.chart3.Text = "chart3";
@@ -475,7 +475,7 @@ namespace Yggdrasil_Backdoor
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(16, 483);
+            this.progressBar1.Location = new System.Drawing.Point(1662, 556);
             this.progressBar1.Maximum = 255;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(121, 23);
@@ -490,17 +490,17 @@ namespace Yggdrasil_Backdoor
             // 
             // chart_ADC
             // 
-            chartArea20.Name = "ChartArea1";
-            this.chart_ADC.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.chart_ADC.Legends.Add(legend20);
+            chartArea12.Name = "ChartArea1";
+            this.chart_ADC.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chart_ADC.Legends.Add(legend12);
             this.chart_ADC.Location = new System.Drawing.Point(194, 547);
             this.chart_ADC.Name = "chart_ADC";
-            series35.ChartArea = "ChartArea1";
-            series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series35.Legend = "Legend1";
-            series35.Name = "SeriesADC";
-            this.chart_ADC.Series.Add(series35);
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series21.Legend = "Legend1";
+            series21.Name = "SeriesADC";
+            this.chart_ADC.Series.Add(series21);
             this.chart_ADC.Size = new System.Drawing.Size(533, 196);
             this.chart_ADC.TabIndex = 78;
             this.chart_ADC.Text = "chart4";
@@ -697,14 +697,14 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(1681, 629);
+            this.textBox3.Location = new System.Drawing.Point(16, 692);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(121, 20);
             this.textBox3.TabIndex = 104;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1742, 655);
+            this.button5.Location = new System.Drawing.Point(77, 718);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(60, 23);
             this.button5.TabIndex = 103;
@@ -717,7 +717,7 @@ namespace Yggdrasil_Backdoor
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1677, 599);
+            this.label15.Location = new System.Drawing.Point(12, 662);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(129, 24);
             this.label15.TabIndex = 102;
@@ -725,7 +725,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(1681, 655);
+            this.button6.Location = new System.Drawing.Point(16, 718);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(60, 23);
             this.button6.TabIndex = 105;
@@ -734,7 +734,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1521, 655);
+            this.button7.Location = new System.Drawing.Point(16, 621);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(60, 23);
             this.button7.TabIndex = 109;
@@ -743,14 +743,14 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(1521, 629);
+            this.textBox4.Location = new System.Drawing.Point(16, 595);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(121, 20);
             this.textBox4.TabIndex = 108;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(1582, 655);
+            this.button8.Location = new System.Drawing.Point(77, 621);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(60, 23);
             this.button8.TabIndex = 107;
@@ -762,7 +762,7 @@ namespace Yggdrasil_Backdoor
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(1517, 599);
+            this.label17.Location = new System.Drawing.Point(12, 565);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(97, 24);
             this.label17.TabIndex = 106;
@@ -770,7 +770,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(1362, 655);
+            this.button9.Location = new System.Drawing.Point(16, 529);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(60, 23);
             this.button9.TabIndex = 113;
@@ -779,14 +779,14 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(1362, 629);
+            this.textBox5.Location = new System.Drawing.Point(16, 503);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(121, 20);
             this.textBox5.TabIndex = 112;
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(1423, 655);
+            this.button10.Location = new System.Drawing.Point(77, 529);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(60, 23);
             this.button10.TabIndex = 111;
@@ -798,7 +798,7 @@ namespace Yggdrasil_Backdoor
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(1358, 599);
+            this.label18.Location = new System.Drawing.Point(12, 473);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(131, 24);
             this.label18.TabIndex = 110;
@@ -825,9 +825,9 @@ namespace Yggdrasil_Backdoor
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Yggdrasil_Backdoor.Properties.Resources.gynge;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 481);
+            this.pictureBox1.Location = new System.Drawing.Point(1313, 547);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(533, 196);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 118;
             this.pictureBox1.TabStop = false;
