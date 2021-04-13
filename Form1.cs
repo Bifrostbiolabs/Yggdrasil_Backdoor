@@ -322,6 +322,7 @@ namespace Yggdrasil_Backdoor
                     serialPort1.WriteLine("#,55,0,1,0,"); richTextBoxTx.Text = ("#,55,0,1,0,");
                     while (serialPort1.BytesToRead == 0) ;
                     richTextBoxRx.Text = serialPort1.ReadLine();
+                    //TjekSensor.Start();
                 }
             }
             else
@@ -496,6 +497,61 @@ namespace Yggdrasil_Backdoor
         private void button11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TjekSensor_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button11_Click_1(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen == true)
+            {
+                try
+                {
+                    serialPort1.WriteLine("#,52,1,1,");
+                    while (serialPort1.BytesToRead == 0) ;
+                    Thread.Sleep(10);
+
+                    String Jacks = Convert.ToString(serialPort1.ReadLine());
+                    richTextBoxRx.Text = Jacks;
+
+                    String[] spearatorA = { "," };
+                    String[] spearatorB = { ";" };
+
+                    Int32 count = 100;
+
+
+                    string[] portsA = Jacks.Split(spearatorA, count, StringSplitOptions.RemoveEmptyEntries);
+                    string[] portsB = portsA[4].Split(spearatorB, count, StringSplitOptions.RemoveEmptyEntries);
+
+
+
+                    if (portsB[0] == "Y") { checkBox1.Checked = true; } else { checkBox1.Checked = false; }
+                    if (portsB[1] == "Y") { checkBox2.Checked = true; } else { checkBox2.Checked = false; }
+                    if (portsB[2] == "Y") { checkBox3.Checked = true; } else { checkBox3.Checked = false; }
+                    if (portsB[3] == "Y") { checkBox4.Checked = true; } else { checkBox4.Checked = false; }
+                    if (portsB[4] == "Y") { checkBox5.Checked = true; } else { checkBox5.Checked = false; }
+                    if (portsB[5] == "Y") { checkBox6.Checked = true; } else { checkBox6.Checked = false; }
+                    if (portsB[6] == "Y") { checkBox7.Checked = true; } else { checkBox7.Checked = false; }
+                    if (portsB[7] == "Y") { checkBox8.Checked = true; } else { checkBox8.Checked = false; }
+                    if (portsB[8] == "Y") { checkBox9.Checked = true; } else { checkBox9.Checked = false; }
+                    if (portsB[9] == "Y") { checkBox10.Checked = true; } else { checkBox10.Checked = false; }
+                    if (portsB[10] == "Y") { checkBox11.Checked = true; } else { checkBox11.Checked = false; }
+                    if (portsB[11] == "Y") { checkBox12.Checked = true; } else { checkBox12.Checked = false; }
+                    if (portsB[12] == "Y") { checkBox13.Checked = true; } else { checkBox13.Checked = false; }
+                    if (portsB[13] == "Y") { checkBox14.Checked = true; } else { checkBox14.Checked = false; }
+                    if (portsB[14] == "Y") { checkBox15.Checked = true; } else { checkBox15.Checked = false; }
+                    if (portsB[15] == "Y") { checkBox16.Checked = true; } else { checkBox16.Checked = false; }
+
+                }
+                catch
+                {
+
+                }
+
+            }
         }
     }
 }

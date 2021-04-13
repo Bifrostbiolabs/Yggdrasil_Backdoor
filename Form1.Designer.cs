@@ -114,6 +114,25 @@ namespace Yggdrasil_Backdoor
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TjekSensor = new System.Windows.Forms.Timer(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
@@ -145,7 +164,7 @@ namespace Yggdrasil_Backdoor
             // 
             // richTextBoxTx
             // 
-            this.richTextBoxTx.Location = new System.Drawing.Point(194, 54);
+            this.richTextBoxTx.Location = new System.Drawing.Point(194, 95);
             this.richTextBoxTx.Name = "richTextBoxTx";
             this.richTextBoxTx.Size = new System.Drawing.Size(533, 196);
             this.richTextBoxTx.TabIndex = 27;
@@ -153,7 +172,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(652, 256);
+            this.button12.Location = new System.Drawing.Point(652, 297);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 28;
@@ -178,7 +197,7 @@ namespace Yggdrasil_Backdoor
             this.chart1.ChartAreas.Add(chartArea9);
             legend9.Name = "Legend1";
             this.chart1.Legends.Add(legend9);
-            this.chart1.Location = new System.Drawing.Point(753, 54);
+            this.chart1.Location = new System.Drawing.Point(753, 95);
             this.chart1.Name = "chart1";
             series15.ChartArea = "ChartArea1";
             series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
@@ -214,7 +233,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(1194, 433);
+            this.button13.Location = new System.Drawing.Point(1194, 474);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 34;
@@ -228,7 +247,7 @@ namespace Yggdrasil_Backdoor
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(190, 281);
+            this.label7.Location = new System.Drawing.Point(190, 322);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 24);
             this.label7.TabIndex = 36;
@@ -236,7 +255,7 @@ namespace Yggdrasil_Backdoor
             // 
             // richTextBoxRx
             // 
-            this.richTextBoxRx.Location = new System.Drawing.Point(194, 310);
+            this.richTextBoxRx.Location = new System.Drawing.Point(194, 351);
             this.richTextBoxRx.Name = "richTextBoxRx";
             this.richTextBoxRx.Size = new System.Drawing.Size(533, 196);
             this.richTextBoxRx.TabIndex = 35;
@@ -247,7 +266,7 @@ namespace Yggdrasil_Backdoor
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(190, 27);
+            this.label5.Location = new System.Drawing.Point(190, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 24);
             this.label5.TabIndex = 37;
@@ -259,7 +278,7 @@ namespace Yggdrasil_Backdoor
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(749, 27);
+            this.label6.Location = new System.Drawing.Point(749, 68);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 24);
             this.label6.TabIndex = 38;
@@ -285,7 +304,7 @@ namespace Yggdrasil_Backdoor
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 775);
+            this.splitter1.Size = new System.Drawing.Size(3, 827);
             this.splitter1.TabIndex = 40;
             this.splitter1.TabStop = false;
             // 
@@ -295,7 +314,7 @@ namespace Yggdrasil_Backdoor
             this.chart2.ChartAreas.Add(chartArea10);
             legend10.Name = "Legend1";
             this.chart2.Legends.Add(legend10);
-            this.chart2.Location = new System.Drawing.Point(1313, 54);
+            this.chart2.Location = new System.Drawing.Point(1313, 95);
             this.chart2.Name = "chart2";
             series17.ChartArea = "ChartArea1";
             series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -319,7 +338,7 @@ namespace Yggdrasil_Backdoor
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1309, 27);
+            this.label8.Location = new System.Drawing.Point(1309, 68);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 24);
             this.label8.TabIndex = 44;
@@ -328,7 +347,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(1749, 462);
+            this.button14.Location = new System.Drawing.Point(1749, 503);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 45;
@@ -338,7 +357,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(1194, 462);
+            this.button15.Location = new System.Drawing.Point(1194, 503);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 55;
@@ -357,7 +376,7 @@ namespace Yggdrasil_Backdoor
             this.chart3.ChartAreas.Add(chartArea11);
             legend11.Name = "Legend1";
             this.chart3.Legends.Add(legend11);
-            this.chart3.Location = new System.Drawing.Point(753, 547);
+            this.chart3.Location = new System.Drawing.Point(753, 588);
             this.chart3.Name = "chart3";
             series19.ChartArea = "ChartArea1";
             series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -382,7 +401,7 @@ namespace Yggdrasil_Backdoor
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1191, 591);
+            this.label12.Location = new System.Drawing.Point(1191, 632);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 13);
             this.label12.TabIndex = 64;
@@ -391,7 +410,7 @@ namespace Yggdrasil_Backdoor
             // comboBoxPeriod
             // 
             this.comboBoxPeriod.FormattingEnabled = true;
-            this.comboBoxPeriod.Location = new System.Drawing.Point(1194, 607);
+            this.comboBoxPeriod.Location = new System.Drawing.Point(1194, 648);
             this.comboBoxPeriod.Name = "comboBoxPeriod";
             this.comboBoxPeriod.Size = new System.Drawing.Size(75, 21);
             this.comboBoxPeriod.TabIndex = 67;
@@ -475,7 +494,7 @@ namespace Yggdrasil_Backdoor
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(1662, 556);
+            this.progressBar1.Location = new System.Drawing.Point(1662, 597);
             this.progressBar1.Maximum = 255;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(121, 23);
@@ -494,7 +513,7 @@ namespace Yggdrasil_Backdoor
             this.chart_ADC.ChartAreas.Add(chartArea12);
             legend12.Name = "Legend1";
             this.chart_ADC.Legends.Add(legend12);
-            this.chart_ADC.Location = new System.Drawing.Point(194, 547);
+            this.chart_ADC.Location = new System.Drawing.Point(194, 588);
             this.chart_ADC.Name = "chart_ADC";
             series21.ChartArea = "ChartArea1";
             series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -511,7 +530,7 @@ namespace Yggdrasil_Backdoor
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(190, 520);
+            this.label10.Location = new System.Drawing.Point(190, 561);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(112, 24);
             this.label10.TabIndex = 81;
@@ -519,7 +538,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(632, 701);
+            this.button2.Location = new System.Drawing.Point(632, 742);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 83;
@@ -529,7 +548,7 @@ namespace Yggdrasil_Backdoor
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(632, 672);
+            this.button3.Location = new System.Drawing.Point(632, 713);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 82;
@@ -571,7 +590,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(632, 595);
+            this.textBox2.Location = new System.Drawing.Point(632, 636);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(75, 20);
             this.textBox2.TabIndex = 88;
@@ -581,7 +600,7 @@ namespace Yggdrasil_Backdoor
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(629, 578);
+            this.label13.Location = new System.Drawing.Point(629, 619);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(54, 13);
             this.label13.TabIndex = 89;
@@ -592,7 +611,7 @@ namespace Yggdrasil_Backdoor
             this.label100.AutoSize = true;
             this.label100.BackColor = System.Drawing.Color.White;
             this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(1746, 100);
+            this.label100.Location = new System.Drawing.Point(1746, 141);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(37, 13);
             this.label100.TabIndex = 91;
@@ -600,7 +619,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox100
             // 
-            this.textBox100.Location = new System.Drawing.Point(1749, 116);
+            this.textBox100.Location = new System.Drawing.Point(1749, 157);
             this.textBox100.Name = "textBox100";
             this.textBox100.Size = new System.Drawing.Size(75, 20);
             this.textBox100.TabIndex = 90;
@@ -610,7 +629,7 @@ namespace Yggdrasil_Backdoor
             this.label85.AutoSize = true;
             this.label85.BackColor = System.Drawing.Color.White;
             this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.Location = new System.Drawing.Point(1746, 139);
+            this.label85.Location = new System.Drawing.Point(1746, 180);
             this.label85.Name = "label85";
             this.label85.Size = new System.Drawing.Size(30, 13);
             this.label85.TabIndex = 93;
@@ -618,7 +637,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox85
             // 
-            this.textBox85.Location = new System.Drawing.Point(1749, 156);
+            this.textBox85.Location = new System.Drawing.Point(1749, 197);
             this.textBox85.Name = "textBox85";
             this.textBox85.Size = new System.Drawing.Size(75, 20);
             this.textBox85.TabIndex = 92;
@@ -628,7 +647,7 @@ namespace Yggdrasil_Backdoor
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1746, 179);
+            this.label16.Location = new System.Drawing.Point(1746, 220);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(30, 13);
             this.label16.TabIndex = 95;
@@ -636,7 +655,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox70
             // 
-            this.textBox70.Location = new System.Drawing.Point(1749, 195);
+            this.textBox70.Location = new System.Drawing.Point(1749, 236);
             this.textBox70.Name = "textBox70";
             this.textBox70.Size = new System.Drawing.Size(75, 20);
             this.textBox70.TabIndex = 94;
@@ -646,7 +665,7 @@ namespace Yggdrasil_Backdoor
             this.label55.AutoSize = true;
             this.label55.BackColor = System.Drawing.Color.White;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(1746, 218);
+            this.label55.Location = new System.Drawing.Point(1746, 259);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(30, 13);
             this.label55.TabIndex = 97;
@@ -654,7 +673,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox55
             // 
-            this.textBox55.Location = new System.Drawing.Point(1749, 234);
+            this.textBox55.Location = new System.Drawing.Point(1749, 275);
             this.textBox55.Name = "textBox55";
             this.textBox55.Size = new System.Drawing.Size(75, 20);
             this.textBox55.TabIndex = 96;
@@ -664,7 +683,7 @@ namespace Yggdrasil_Backdoor
             this.label40.AutoSize = true;
             this.label40.BackColor = System.Drawing.Color.White;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(1746, 257);
+            this.label40.Location = new System.Drawing.Point(1746, 298);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(30, 13);
             this.label40.TabIndex = 99;
@@ -672,7 +691,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox40
             // 
-            this.textBox40.Location = new System.Drawing.Point(1749, 273);
+            this.textBox40.Location = new System.Drawing.Point(1749, 314);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(75, 20);
             this.textBox40.TabIndex = 98;
@@ -682,7 +701,7 @@ namespace Yggdrasil_Backdoor
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1746, 296);
+            this.label14.Location = new System.Drawing.Point(1746, 337);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 13);
             this.label14.TabIndex = 101;
@@ -690,7 +709,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox0
             // 
-            this.textBox0.Location = new System.Drawing.Point(1749, 312);
+            this.textBox0.Location = new System.Drawing.Point(1749, 353);
             this.textBox0.Name = "textBox0";
             this.textBox0.Size = new System.Drawing.Size(75, 20);
             this.textBox0.TabIndex = 100;
@@ -806,7 +825,7 @@ namespace Yggdrasil_Backdoor
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(1749, 369);
+            this.textBox7.Location = new System.Drawing.Point(1749, 410);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(75, 20);
             this.textBox7.TabIndex = 116;
@@ -816,7 +835,7 @@ namespace Yggdrasil_Backdoor
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.White;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1746, 353);
+            this.label19.Location = new System.Drawing.Point(1746, 394);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(63, 13);
             this.label19.TabIndex = 117;
@@ -825,19 +844,240 @@ namespace Yggdrasil_Backdoor
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Yggdrasil_Backdoor.Properties.Resources.gynge;
-            this.pictureBox1.Location = new System.Drawing.Point(1313, 547);
+            this.pictureBox1.Location = new System.Drawing.Point(1313, 588);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(533, 196);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 118;
             this.pictureBox1.TabStop = false;
             // 
+            // TjekSensor
+            // 
+            this.TjekSensor.Interval = 5000;
+            this.TjekSensor.Tick += new System.EventHandler(this.TjekSensor_Tick);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(511, 34);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(68, 17);
+            this.checkBox1.TabIndex = 135;
+            this.checkBox1.Text = "Sensor 1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.ForeColor = System.Drawing.Color.White;
+            this.checkBox2.Location = new System.Drawing.Point(592, 34);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(68, 17);
+            this.checkBox2.TabIndex = 136;
+            this.checkBox2.Text = "Sensor 2";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.ForeColor = System.Drawing.Color.White;
+            this.checkBox3.Location = new System.Drawing.Point(673, 34);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(68, 17);
+            this.checkBox3.TabIndex = 137;
+            this.checkBox3.Text = "Sensor 3";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.ForeColor = System.Drawing.Color.White;
+            this.checkBox4.Location = new System.Drawing.Point(754, 34);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(68, 17);
+            this.checkBox4.TabIndex = 138;
+            this.checkBox4.Text = "Sensor 4";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.ForeColor = System.Drawing.Color.White;
+            this.checkBox5.Location = new System.Drawing.Point(835, 34);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(68, 17);
+            this.checkBox5.TabIndex = 139;
+            this.checkBox5.Text = "Sensor 5";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.ForeColor = System.Drawing.Color.White;
+            this.checkBox6.Location = new System.Drawing.Point(916, 34);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(68, 17);
+            this.checkBox6.TabIndex = 140;
+            this.checkBox6.Text = "Sensor 6";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.ForeColor = System.Drawing.Color.White;
+            this.checkBox7.Location = new System.Drawing.Point(997, 34);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(68, 17);
+            this.checkBox7.TabIndex = 141;
+            this.checkBox7.Text = "Sensor 7";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.ForeColor = System.Drawing.Color.White;
+            this.checkBox8.Location = new System.Drawing.Point(1078, 34);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(68, 17);
+            this.checkBox8.TabIndex = 142;
+            this.checkBox8.Text = "Sensor 8";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.ForeColor = System.Drawing.Color.White;
+            this.checkBox9.Location = new System.Drawing.Point(1159, 34);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(68, 17);
+            this.checkBox9.TabIndex = 143;
+            this.checkBox9.Text = "Sensor 9";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.ForeColor = System.Drawing.Color.White;
+            this.checkBox10.Location = new System.Drawing.Point(1240, 34);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(74, 17);
+            this.checkBox10.TabIndex = 144;
+            this.checkBox10.Text = "Sensor 10";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.ForeColor = System.Drawing.Color.White;
+            this.checkBox11.Location = new System.Drawing.Point(1327, 34);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(74, 17);
+            this.checkBox11.TabIndex = 145;
+            this.checkBox11.Text = "Sensor 11";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.ForeColor = System.Drawing.Color.White;
+            this.checkBox12.Location = new System.Drawing.Point(1414, 34);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(74, 17);
+            this.checkBox12.TabIndex = 146;
+            this.checkBox12.Text = "Sensor 12";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.ForeColor = System.Drawing.Color.White;
+            this.checkBox13.Location = new System.Drawing.Point(1501, 34);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(74, 17);
+            this.checkBox13.TabIndex = 147;
+            this.checkBox13.Text = "Sensor 13";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.ForeColor = System.Drawing.Color.White;
+            this.checkBox14.Location = new System.Drawing.Point(1588, 34);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(74, 17);
+            this.checkBox14.TabIndex = 148;
+            this.checkBox14.Text = "Sensor 14";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.ForeColor = System.Drawing.Color.White;
+            this.checkBox15.Location = new System.Drawing.Point(1675, 34);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(74, 17);
+            this.checkBox15.TabIndex = 149;
+            this.checkBox15.Text = "Sensor 15";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.ForeColor = System.Drawing.Color.White;
+            this.checkBox16.Location = new System.Drawing.Point(1762, 34);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(74, 17);
+            this.checkBox16.TabIndex = 150;
+            this.checkBox16.Text = "Sensor 16";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(190, 27);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(174, 24);
+            this.label20.TabIndex = 151;
+            this.label20.Text = "Sensor connectet";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(406, 27);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 23);
+            this.button11.TabIndex = 152;
+            this.button11.Text = "Tjek";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(76)))), ((int)(((byte)(129)))));
-            this.ClientSize = new System.Drawing.Size(1887, 775);
+            this.ClientSize = new System.Drawing.Size(1887, 827);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.checkBox16);
+            this.Controls.Add(this.checkBox15);
+            this.Controls.Add(this.checkBox14);
+            this.Controls.Add(this.checkBox13);
+            this.Controls.Add(this.checkBox12);
+            this.Controls.Add(this.checkBox11);
+            this.Controls.Add(this.checkBox10);
+            this.Controls.Add(this.checkBox9);
+            this.Controls.Add(this.checkBox8);
+            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.checkBox6);
+            this.Controls.Add(this.checkBox5);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.textBox7);
@@ -986,6 +1226,25 @@ namespace Yggdrasil_Backdoor
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer TjekSensor;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button button11;
     }
 }
 
